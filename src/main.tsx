@@ -9,7 +9,5 @@ if (rootElement == null) {
 }
 
 createRoot(rootElement).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
+  <App />,
 );

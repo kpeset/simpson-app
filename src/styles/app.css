@@ -1,5 +1,6 @@
 :root {
-  --color-yellow: #ffd90f;
+  --color-yellow: #fed41d;
+  --color-blue: #009ddc;
 }
 
 * {
@@ -16,5 +17,5 @@ li {
 main {
   padding: 2rem;
   min-height: 80vh;
-  background-color: rgb(140, 220, 255);
+  background-color: var(--color-blue);
 }
