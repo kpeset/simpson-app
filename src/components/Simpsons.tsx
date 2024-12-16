@@ -8,6 +8,7 @@ export default function Simpsons() {
       lastname: "Simpson",
       city: "Springfield",
       age: 45,
+      donuts: 125,
       picture:
         "https://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png",
     },
@@ -17,6 +18,7 @@ export default function Simpsons() {
       lastname: "Bouvier",
       city: "Liège",
       age: 41,
+      donuts: 0,
       picture:
         "https://upload.wikimedia.org/wikipedia/en/0/0b/Marge_Simpson.png",
     },
@@ -26,6 +28,7 @@ export default function Simpsons() {
       lastname: "Simpson",
       city: "Springfield",
       age: 12,
+      donuts: 0,
       picture:
         "https://upload.wikimedia.org/wikipedia/en/e/ec/Lisa_Simpson.png",
     },
@@ -38,7 +41,9 @@ export default function Simpsons() {
   return (
     <main>
       {simpsons.map((simpson) => (
-        <SimpsonCard key={simpson.id} simpson={simpson} sayHello={sayHello} />
+        <>
+          <SimpsonCard key={simpson.id} simpson={simpson} sayHello={sayHello} />
+        </>
       ))}
     </main>
   );
